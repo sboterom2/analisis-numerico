@@ -1,6 +1,6 @@
-#** analisis-numerico**
-##**Members :**
-Sebastian Tapias 
-Juan Jose Moreno
-Samuel Botero
+# **analisis-numerico**
+## **Members :**
+### Sebastian Tapias 
+### Juan Jose Moreno
+### Samuel Botero
 
