@@ -89,8 +89,82 @@ def action(x):
 Interface
 """
 
+
 # Numerical non-linear equations
+
+text = Label(root,text="Solutions for Numerical NLE",font=("Orbitron",10))
+text.place(x=30, y=10)
+
+
+Binc = tk.Button(root, text="Incremental Search",command=binc)
+Binc.place(x=50, y=50)
+
+Bisec = tk.Button(root, text="Bisection",command=bisec)
+Bisec.place(x=50, y=100)
+
+Rfalse = tk.Button(root, text="False Rule",command=rfalse)
+Rfalse.place(x=50, y=150)
+
+Fpoint = tk.Button(root, text="Fixed Point",command=fpoint)
+Fpoint.place(x=50, y=200)
+
+Newton = tk.Button(root, text="Newton",command=newton)
+Newton.place(x=50, y=250)
+
+Sec = tk.Button(root, text="Secant",command=sec)
+Sec.place(x=50, y=300)
+
+Rmul = tk.Button(root, text="Multiple Roots",command=rmul)
+Rmul.place(x=50, y=350)
+
+
 # Systems of linear equations
+
+text = Label(root,text="Solution for Systems of LE",font=("Orbitron",10))
+text.place(x=300, y=10)
+
+Gauss = tk.Button(root, text="Metodo De Gauss",command=gauss)
+Gauss.place(x=320, y=50)
+
+Lu = tk.Button(root, text="Factorizacion LU",command=lu)
+Lu.place(x=320, y=100)
+
+Doolitle = tk.Button(root, text="Doolitle",command=doolittle)
+Doolitle.place(x=320, y=150)
+
+Crout = tk.Button(root, text="Crount",command=crout)
+Crout.place(x=320, y=200)
+
+Cholesky = tk.Button(root, text="Cholesky",command=cholesky)
+Cholesky.place(x=320, y=250)
+
+Jacobi = tk.Button(root, text="Jacobi",command=jacobi)
+Jacobi.place(x=320, y=300)
+
+Gseidel = tk.Button(root, text="Gauss - Seidel",command=gseidel)
+Gseidel.place(x=320, y=350)
+
 # Interpolation
+
+text = Label(root,text="Interpolation",font=("Orbitron",10))
+text.place(x=550, y=10)
+
+Vmonde = tk.Button(root, text="Vandermonde",command=vander)
+Vmonde.place(x=560, y=50)
+
+Ddiv = tk.Button(root, text="Diferencias Divididas",command=difdiv)
+Ddiv.place(x=560, y=100)
+
+Lagrange = tk.Button(root, text="Lagrange",command=lagrange)
+Lagrange.place(x=560, y=150)
+
+Spline1 = tk.Button(root, text="Splines G1",command=spline1)
+Spline1.place(x=560, y=200)
+
+Spline2 = tk.Button(root, text="Splines G2",command=spline2)
+Spline2.place(x=560, y=250)
+
+Interpolacion = tk.Button(root, text="Interpolacion",command=inter)
+Interpolacion.place(x=560, y=300)
 
 root.mainloop()
