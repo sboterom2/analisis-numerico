@@ -27,10 +27,10 @@ def forwardSubstitution(L, b):
     n = sizeano[0]
     m = sizeano[1]
     for i in range(0,n-1,1):
-        pivote = AB[i,i]
-        adelante = i + 1
-        for k in range(adelante,n,1):
-            factor  = AB[k,i] / pivote
+        pivot = AB[i,i]
+        forward = i + 1
+        for k in range(forward,n,1):
+            factor  = AB[k,i] / pivot
             AB[k,:] -= AB[i,:]*factor
     return AB
 
