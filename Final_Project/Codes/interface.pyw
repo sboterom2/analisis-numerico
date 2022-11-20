@@ -92,7 +92,7 @@ Interface
 
 # Numerical non-linear equations
 
-text = Label(root,text="Numerical Non-linear Equations",font=("Orbitron",10))
+text = Label(root,text="Numerical Non-linear Equations",font=("Arial",12))
 text.place(x=30, y=10)
 
 
@@ -120,7 +120,7 @@ Rmul.place(x=50, y=350)
 
 # Systems of linear equations
 
-text = Label(root,text="Systems of Linear Equations",font=("Orbitron",10))
+text = Label(root,text="Systems of Linear Equations",font=("Arial",12))
 text.place(x=300, y=10)
 
 Gauss = tk.Button(root, text="Gauss",command=gauss)
@@ -146,7 +146,7 @@ Gseidel.place(x=320, y=350)
 
 # Interpolation
 
-text = Label(root,text="Interpolation",font=("Orbitron",10))
+text = Label(root,text="Interpolation",font=("Arial",12))
 text.place(x=550, y=10)
 
 Vmonde = tk.Button(root, text="Vandermonde",command=vander)
