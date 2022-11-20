@@ -62,6 +62,29 @@ def lu():
     
 # Interpolation
 
+def difdiv():
+    os.system('start cmd /K python ./Interpolation/divided_differences.py')
+
+def inter():
+    os.system('start cmd /K python ./Interpolation/interpolation.py')
+
+def lagrange():
+    os.system('start cmd /K python ./Interpolation/lagrange.py')
+
+def spline1():
+    os.system('start cmd /K python ./Interpolation/splines_g1.py')
+
+def spline2():
+    os.system('start cmd /K python ./Interpolation/splines_g2.py')
+
+def vander():
+    os.system('start cmd /K python ./Interpolation/vandermonde.py')
+
+
+
+def action(x):
+    return x
+
 """
 Interface
 """
