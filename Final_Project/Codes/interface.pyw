@@ -38,6 +38,28 @@ def rmul():
     os.system('start cmd /K python ./Numerical_Solutions_For_NLE/multiple_roots.py')
     
 # Systems of linear equations
+
+def cholesky():
+    os.system('start cmd /K python ./Solutions_For_Systems_Of_LE/cholesky.py')
+
+def crout():
+    os.system('start cmd /K python ./Solutions_For_Systems_Of_LE/crout.py')
+
+def doolittle():
+    os.system('start cmd /K python ./Solutions_For_Systems_Of_LE/doolittle.py')
+
+def gseidel():
+    os.system('start cmd /K python ./Solutions_For_Systems_Of_LE/gauss_seidel.py')
+
+def gauss():
+    os.system('start cmd /K python ./Solutions_For_Systems_Of_LE/gauss.py')
+
+def jacobi():
+    os.system('start cmd /K python ./Solutions_For_Systems_Of_LE/jacobi.py')
+
+def lu():
+    os.system('start cmd /K python ./Solutions_For_Systems_Of_LE/lu.py')
+    
 # Interpolation
 
 """
