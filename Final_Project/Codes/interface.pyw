@@ -8,7 +8,7 @@ root = tk.Tk()
 
 root.title("Numerical Methods Calculator") 
 root.geometry("800x600")
-root key = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s"
+root_key = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s"
 
 """
 Extract path from every Method
@@ -92,7 +92,7 @@ Interface
 
 # Numerical non-linear equations
 
-text = Label(root,text="Solutions for Numerical NLE",font=("Orbitron",10))
+text = Label(root,text="Numerical Non-linear Equations",font=("Orbitron",10))
 text.place(x=30, y=10)
 
 
@@ -120,13 +120,13 @@ Rmul.place(x=50, y=350)
 
 # Systems of linear equations
 
-text = Label(root,text="Solution for Systems of LE",font=("Orbitron",10))
+text = Label(root,text="Systems of Linear Equations",font=("Orbitron",10))
 text.place(x=300, y=10)
 
-Gauss = tk.Button(root, text="Metodo De Gauss",command=gauss)
+Gauss = tk.Button(root, text="Gauss",command=gauss)
 Gauss.place(x=320, y=50)
 
-Lu = tk.Button(root, text="Factorizacion LU",command=lu)
+Lu = tk.Button(root, text="LU Factorization",command=lu)
 Lu.place(x=320, y=100)
 
 Doolitle = tk.Button(root, text="Doolitle",command=doolittle)
@@ -152,7 +152,7 @@ text.place(x=550, y=10)
 Vmonde = tk.Button(root, text="Vandermonde",command=vander)
 Vmonde.place(x=560, y=50)
 
-Ddiv = tk.Button(root, text="Diferencias Divididas",command=difdiv)
+Ddiv = tk.Button(root, text="Divided Difference",command=difdiv)
 Ddiv.place(x=560, y=100)
 
 Lagrange = tk.Button(root, text="Lagrange",command=lagrange)
@@ -164,7 +164,7 @@ Spline1.place(x=560, y=200)
 Spline2 = tk.Button(root, text="Splines G2",command=spline2)
 Spline2.place(x=560, y=250)
 
-Interpolacion = tk.Button(root, text="Interpolacion",command=inter)
+Interpolacion = tk.Button(root, text="Interpolation",command=inter)
 Interpolacion.place(x=560, y=300)
 
 root.mainloop()
