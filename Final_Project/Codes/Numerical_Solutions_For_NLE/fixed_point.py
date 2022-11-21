@@ -17,8 +17,12 @@ def PF(eq,x_0,tol):
         iteracion+=1
         if x_r !=0:
             e=abs((x_r-x_prev)/x_r)*100
-    print(x_r)
-    print(e)
+    print('The solution is in '+ str(x_r)+', with an eror of '+str(e))
     
+    
+    
+fun = input("Ingresa la funcion: ")
+x0 = float(input("Ingresa X0: "))
+es = float(input("Ingresa tolerancia: "))
 
 
