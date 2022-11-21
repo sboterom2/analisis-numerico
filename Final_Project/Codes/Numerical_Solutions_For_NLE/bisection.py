@@ -26,15 +26,17 @@ def Bisec(func,a,b,tol):
             fa=fr
         else:
             ea=0
-    print(xprev)
-    print(xr)
- 
+    print('The solution is ' +str(xr), 'with an error of'+str(ea))
     
     
+fun = input("Put the funtion:  ")
+xl = float(input("Put a: "))
+xu = float(input("Put b: "))
+es = float(input("Put the tolerance: "))
+
+Bisec(fun,xl,xu,es)
   
     
     
 
 
-
-a=Bisec('x**10-1',0,0.1,0.01)
