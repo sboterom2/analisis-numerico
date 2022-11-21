@@ -7,7 +7,7 @@ def function(eq):
     global x
     return sp.sympify(eq)
 
-def secante(fx,a,b,tol,it):
+def secant(fx,a,b,tol,it):
     global x
     fx=function(fx)
     e=tol+1
@@ -28,6 +28,6 @@ def secante(fx,a,b,tol,it):
 
 
 
-res=secante('x**3+x**2+2*x+1',-1,0,0.001,100)
+res=secant('x**3+x**2+2*x+1',-1,0,0.001,100)
 
 
