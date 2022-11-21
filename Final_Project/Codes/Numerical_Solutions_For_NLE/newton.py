@@ -14,15 +14,15 @@ def Newton(eq,x_0,es,maxIte):
     f_NR=x-(eq/d)
     ea=100 
     x_r=x_0
-    interaciones=0
+    inter=0
     while ea>es:
         x_prev=x_r
         x_r=f_NR.evalf(subs={x:x_prev})
         if x_r !=0:
             ea=abs((x_r-x_prev)/x_r)*100
-        interaciones=interaciones+1
+        inter+=1
         
-        if interaciones>=maxIte:
-            print("El metodo no converge")
+        if inter>=maxIte:
+            print("The method does not converge")
             break
     
