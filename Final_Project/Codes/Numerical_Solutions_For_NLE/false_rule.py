@@ -7,7 +7,7 @@ def function(func):
     global x
     return sp.sympify(func)
 
-def Regla_falsa(eq,a,b,tol):
+def false_rule(eq,a,b,tol):
     global x
     eq=function(eq)
     length = abs(b-a)
@@ -33,6 +33,6 @@ def Regla_falsa(eq,a,b,tol):
     
 
 
-Regla_falsa('x**3+x**2+2*x+1',-1,0,0.01)
+false_rule('x**3+x**2+2*x+1',-1,0,0.01)
 
 
