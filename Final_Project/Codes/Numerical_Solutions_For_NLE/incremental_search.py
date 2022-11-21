@@ -7,15 +7,15 @@ def funcion(ecua):
     global x
     return sp.sympify(ecua)
 
-def Busqueda_Incremental(ecuacion, a, b, deltaX):
+def Incremental_Search(eq, a, b, deltaX):
     global x
-    ecuacion=funcion(ecuacion)
+    eq=funcion(ecuacion)
 
     while(a<b):
         xi = a + deltaX
-        fun_a = ecuacion.evalf(subs={x:a})
+        fun_a = eq.evalf(subs={x:a})
         
-        fun_xi = ecuacion.evalf(subs={x:xi})
+        fun_xi = eq.evalf(subs={x:xi})
         if (fun_a *fun_xi )<0:    
             
             print(a)
@@ -26,7 +26,7 @@ def Busqueda_Incremental(ecuacion, a, b, deltaX):
   
 
   
-res = Busqueda_Incremental('sin(x)',-7,7,0.3)
+res = Incremental_Search('sin(x)',-7,7,0.3)
 
 
 
