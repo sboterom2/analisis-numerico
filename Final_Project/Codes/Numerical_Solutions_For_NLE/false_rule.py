@@ -10,29 +10,31 @@ def function(func):
 def false_rule(eq,a,b,tol):
     global x
     eq=function(eq)
-    length = abs(b-a)
+    e = abs(b-a)
     fa = eq.evalf(subs={x:a})
     fb = eq.evalf(subs={x:b})
-    while not(length<=tol):
+    while not(e<=tol):
         c = b - fb*(a-b)/(fa-fb)
         fc = eq.evalf(subs={x:c})
         r = np.sign(fa)*np.sign(fc)
         
         if r>0:
-            length = abs(c-a)
+            e = abs(c-a)
             a = c
             fa = fc
         else:
-            length = abs(b-c)
+            e = abs(b-c)
             b = c
             fb = fc
+    print('the solution is '+str(c)+ ', with an error of '+str(e))
     print(c)
-    print(fa)
+    print(e)
 
 
-    
+fun = input("Put the function:  ")
+a = float(input("Put a: "))
+b = float(input("Put b: "))
+tol = float(input("Put tolerance: "))
 
-
-false_rule('x**3+x**2+2*x+1',-1,0,0.01)
-
+false_rule(fun,a,b,tol)
 
