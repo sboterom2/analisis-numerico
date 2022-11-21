@@ -6,8 +6,21 @@ import tkinter as tk
 
 root = tk.Tk()
 
-root.title("Numerical Methods Calculator") 
+root.title("Numerical Methods Calculator")
+root.resizable(1,1)
+root.config(bg="gray") 
 root.geometry("800x600")
+root.config(bd=35)
+root.config(relief ="sunken")
+root.config(cursor="pirate")
+myframe = Frame()
+myframe.pack()
+myframe.config(bg="green")
+myframe.config(width="750", height ="550")
+myframe.config(bd=35)
+myframe.config(relief="sunken")
+myframe.config(cursor="pirate")
+
 root_key = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s"
 
 """
@@ -92,79 +105,79 @@ Interface
 
 # Numerical non-linear equations
 
-text = Label(root,text="Numerical Non-linear Equations",font=("Arial",12))
+text = Label(root,text="Numerical Non-linear Equations",fg="red", justify = "center", font=("Arial",12,"bold","italic"))
 text.place(x=30, y=10)
 
 
-Binc = tk.Button(root, text="Incremental Search",command=binc)
+Binc = tk.Button(root, text="Incremental Search",fg="blue",font=("Arial",8,"bold"),command=binc)
 Binc.place(x=50, y=50)
 
-Bisec = tk.Button(root, text="Bisection",command=bisec)
+Bisec = tk.Button(root, text="Bisection",fg="blue",font=("Arial",8,"bold"),command=bisec)
 Bisec.place(x=50, y=100)
 
-Rfalse = tk.Button(root, text="False Rule",command=rfalse)
+Rfalse = tk.Button(root, text="False Rule",fg="blue",font=("Arial",8,"bold"),command=rfalse)
 Rfalse.place(x=50, y=150)
 
-Fpoint = tk.Button(root, text="Fixed Point",command=fpoint)
+Fpoint = tk.Button(root, text="Fixed Point",fg="blue",font=("Arial",8,"bold"),command=fpoint)
 Fpoint.place(x=50, y=200)
 
-Newton = tk.Button(root, text="Newton",command=newton)
+Newton = tk.Button(root, text="Newton",fg="blue",font=("Arial",8,"bold"),command=newton)
 Newton.place(x=50, y=250)
 
-Sec = tk.Button(root, text="Secant",command=sec)
+Sec = tk.Button(root, text="Secant",fg="blue",font=("Arial",8,"bold"),command=sec)
 Sec.place(x=50, y=300)
 
-Rmul = tk.Button(root, text="Multiple Roots",command=rmul)
+Rmul = tk.Button(root, text="Multiple Roots",fg="blue",font=("Arial",8,"bold"),command=rmul)
 Rmul.place(x=50, y=350)
 
 
 # Systems of linear equations
 
-text = Label(root,text="Systems of Linear Equations",font=("Arial",12))
+text = Label(root,text="Systems of Linear Equations",fg="brown", justify = "center",font=("Arial",12,"bold","italic"))
 text.place(x=300, y=10)
 
-Gauss = tk.Button(root, text="Gauss",command=gauss)
+Gauss = tk.Button(root, text="Gauss",fg="purple",font=("Arial",8,"bold"),command=gauss)
 Gauss.place(x=320, y=50)
 
-Lu = tk.Button(root, text="LU Factorization",command=lu)
+Lu = tk.Button(root, text="LU Factorization",fg="purple",font=("Arial",8,"bold"),command=lu)
 Lu.place(x=320, y=100)
 
-Doolitle = tk.Button(root, text="Doolitle",command=doolittle)
+Doolitle = tk.Button(root, text="Doolitle",fg="purple",font=("Arial",8,"bold"),command=doolittle)
 Doolitle.place(x=320, y=150)
 
-Crout = tk.Button(root, text="Crount",command=crout)
+Crout = tk.Button(root, text="Crount",fg="purple",font=("Arial",8,"bold"),command=crout)
 Crout.place(x=320, y=200)
 
-Cholesky = tk.Button(root, text="Cholesky",command=cholesky)
+Cholesky = tk.Button(root, text="Cholesky",fg="purple",font=("Arial",8,"bold"),command=cholesky)
 Cholesky.place(x=320, y=250)
 
-Jacobi = tk.Button(root, text="Jacobi",command=jacobi)
+Jacobi = tk.Button(root, text="Jacobi",fg="purple",font=("Arial",8,"bold"),command=jacobi)
 Jacobi.place(x=320, y=300)
 
-Gseidel = tk.Button(root, text="Gauss - Seidel",command=gseidel)
+Gseidel = tk.Button(root, text="Gauss - Seidel",fg="purple",font=("Arial",8,"bold"),command=gseidel)
 Gseidel.place(x=320, y=350)
 
 # Interpolation
 
-text = Label(root,text="Interpolation",font=("Arial",12))
+text = Label(root,text="Interpolation",fg="black", justify = "center",font=("Arial",12,"bold","italic"))
 text.place(x=550, y=10)
 
-Vmonde = tk.Button(root, text="Vandermonde",command=vander)
+Vmonde = tk.Button(root, text="Vandermonde",fg="orange",font=("Arial",8,"bold"),command=vander)
 Vmonde.place(x=560, y=50)
 
-Ddiv = tk.Button(root, text="Divided Difference",command=difdiv)
+Ddiv = tk.Button(root, text="Divided Difference",fg="orange",font=("Arial",8,"bold"),command=difdiv)
 Ddiv.place(x=560, y=100)
 
-Lagrange = tk.Button(root, text="Lagrange",command=lagrange)
+Lagrange = tk.Button(root, text="Lagrange",fg="orange",font=("Arial",8,"bold"),command=lagrange)
 Lagrange.place(x=560, y=150)
 
-Spline1 = tk.Button(root, text="Splines G1",command=spline1)
+Spline1 = tk.Button(root, text="Splines G1",fg="orange",font=("Arial",8,"bold"),command=spline1)
 Spline1.place(x=560, y=200)
 
-Spline2 = tk.Button(root, text="Splines G2",command=spline2)
+Spline2 = tk.Button(root, text="Splines G2",fg="orange",font=("Arial",8,"bold"),command=spline2)
 Spline2.place(x=560, y=250)
 
-Interpolacion = tk.Button(root, text="Interpolation",command=inter)
+Interpolacion = tk.Button(root, text="Interpolation",fg="orange",font=("Arial",8,"bold"),command=inter)
 Interpolacion.place(x=560, y=300)
 
 root.mainloop()
