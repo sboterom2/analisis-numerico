@@ -39,7 +39,7 @@ def rfalse():
     os.system('start cmd /K python ./Numerical_Solutions_For_NLE/false_rule.py')
 
 def fpoint():
-    os.system('start cmd /K python ./Numerical_Solutions_For_NLE/.fixed_point.py')
+    os.system('start cmd /K python ./Numerical_Solutions_For_NLE/fixed_point.py')
 
 def newton():
     os.system('start cmd /K python ./Numerical_Solutions_For_NLE/newton.py')
