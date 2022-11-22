@@ -1,6 +1,4 @@
 import sympy as sp
-
-
 x=sp.symbols('x')
 
 def function(eq):
@@ -21,13 +19,16 @@ def secant(fx,a,b,tol,it):
         e=abs(xi-x0)
         x0=xi
         xi=x2
-    print(xi)
-    print(e)
-            
-    
+        print('The solution is '+ str(x0)+ ', with an eror of '+str(e))
+        print(e)
+              
+fun = input("Put the function: ")
+a = float(input("Put a: "))
+b = float(input("Put b: "))
+tol = float(input("Put the tolerance: "))
+ite = float(input("Put max iterations: "))
 
 
-
-res=secant('x**3+x**2+2*x+1',-1,0,0.001,100)
+secant(fun,a,b,tol,ite)
 
 
