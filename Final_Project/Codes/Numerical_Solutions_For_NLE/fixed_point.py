@@ -21,8 +21,9 @@ def PF(eq,x_0,tol):
     
     
     
-fun = input("Ingresa la funcion: ")
-x0 = float(input("Ingresa X0: "))
-es = float(input("Ingresa tolerancia: "))
+fun = input("Put the Function: ")
+x0 = float(input("Put X0: "))
+e = float(input("Put tolerancie: "))
+PF(fun,x0,e)
 
 
