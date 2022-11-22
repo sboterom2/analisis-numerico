@@ -16,7 +16,7 @@ def PF(eq,x_0,tol):
         x_r=eq.evalf(subs={x:x_prev})
         iteracion+=1
         if x_r !=0:
-            e=abs((x_r-x_prev)/x_r)*100
+            e=abs(x_r-x_prev)
     print('The solution is in '+ str(x_r)+', with an eror of '+str(e))
     
     
