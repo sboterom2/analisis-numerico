@@ -5,25 +5,26 @@ def function(eq):
     global x
     return sp.sympify(eq)
 
-def PF(eq,x_0,tol):
+def PF(eq,x0,tol,maxite):
     global x
     eq=function(eq)+x 
-    e=100
-    x_r=x_0 
-    iteracion=0 
-    while e>tol:
-        x_prev=x_r
-        x_r=eq.evalf(subs={x:x_prev})
-        iteracion+=1
-        if x_r !=0:
-            e=abs(x_r-x_prev)
-    print('The solution is in '+ str(x_r)+', with an eror of '+str(e))
-    
+    e=0
+    i=0 
+    while maxite>i:
+        xi=eq.evalf(subs={x:x0}) 
+        e=abs(xi-x0)
+        if e<tol:
+            print('The solution is in '+ str(x0)+', with an eror of '+str(e))
+            break
+        i=i+1
+        x0=xi
+   
     
     
 fun = input("Put the Function: ")
 x0 = float(input("Put X0: "))
 e = float(input("Put tolerancie: "))
-PF(fun,x0,e)
+it=float(input("Put max ite: "))
+PF(fun,x0,e,it)
 
 
