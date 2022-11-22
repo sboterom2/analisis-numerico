@@ -26,9 +26,9 @@ def multiple_roots(eq,x0,tol,it):
     
 
 
-fun = input("Ingresa la funcion: ")
-x0 = float(input("Ingresa X0: "))
-tol = float(input("Ingresa la tolerancia: "))
-ite = float(input("Ingresa las iteraciones: "))
+fun = input("Put the function ")
+x0 = float(input("Put the x0: "))
+tol = float(input("Put the tolerance: "))
+ite = float(input("Put max iterations: "))
 
 multiple_roots(fun,x0,tol,ite)
